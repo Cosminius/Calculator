@@ -24,7 +24,25 @@
     align-items: center;
     padding-right: 10px;
 }
-button{
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 64px);
+    grid-auto-rows: 64px;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.btn-equal{
+    grid-row: span 2;
+    background: #ffffff;
+    color: #000;
+}
+
+.btn-zero{
+    grid-column: span 2;
+}button{
     height: 64px;
     min-width: 64px;
     width: auto;
